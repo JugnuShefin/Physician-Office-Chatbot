@@ -1,0 +1,9 @@
+#Need to create a virtual environment with pyhton 3.6
+#need to install npm in virtual environment
+
+rasa==2.2.3
+rasa-sdk==2.2.0
+# rasa-x==0.35.0
+tensorflow==2.3.0
+
+#please check if port 8080/80/3000 is not blocked or used by other applciations to prevent conflicts

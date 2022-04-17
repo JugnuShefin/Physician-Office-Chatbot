@@ -1,0 +1,105 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- appointment:
+    use_entities: true
+- main_prescription_refill:
+    use_entities: true
+- prescription_request:
+    use_entities: true
+- reference_number:
+    use_entities: true
+- connect_physician:
+    use_entities: true
+- connect_reason:
+    use_entities: true
+- main_medical_report:
+    use_entities: true
+- report_status:
+    use_entities: true
+- report_collection:
+    use_entities: true
+- main_covid_guidance:
+    use_entities: true
+- covid_symptoms:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_greet:
+  - buttons:
+    - payload: appointment
+      title: Appointment
+    - payload: /main_prescription_refill
+      title: Prescription Refill
+    - payload: /main_medical_report
+      title: Medical Report Enquiry
+    - payload: /main_covid_guidance
+      title: Covid-19 Guidance
+    text: Hello, How can I help you today? <br>
+  utter_cheer_up:
+  - text: yayyyy
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+  - text: Is there anything else I can do for you?
+  utter_conclude:
+  - text: Have a great day.
+  - text: Good day.
+  - text: Take care.
+  utter_main_prescription_refill:
+  - text: Welcome to Prescription Refill services. How may I assist you?
+  - text: Welcome! How may I assist you?
+  utter_prescription_request:
+  - text: Sure, we can help you. Please provide your Reference Number.
+  utter_reference_number:
+  - text: Thank you for providing the number. Please wait while we retrieve your details at our end. Is there anything else that I can do?
+  utter_connect_physician:
+  - text: May I know the reason?
+  - text: May I know the reason to connect?
+  utter_connect_reason:
+  - text: Thanks for contacting us. You will receive an email shortly.
+  utter_main_medical_report:
+  - text: Welcome to Medical report enquiry. How may I assist you?
+  - text: Welcome! How may I assist you?
+  utter_report_status:
+  - text: Sure, we can help you. Please provide your Reference Number.
+  utter_report_collection:
+  - text: Please come and collect it from our center from Monday to Friday between 10 am to 5 pm.
+  utter_main_covid_guidance:
+  - text: Welcome to Covid guidance services. How may I assist you?
+  - text: Welcome! How may I assist you?
+  utter_covid_symptoms:
+  - text: Unfortunately, I am not authorized to accept covid related queries. Please book an appointment with the doctor or visit the Canada official website to get more information on covid-19. Please visit this link https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html
+#   utter_please_rephrase:
+#   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  # utter_default:
+  # - text: Sorry I didn't get that. Can you rephrase?
+actions: []
+forms: {}
+e2e_actions: []
