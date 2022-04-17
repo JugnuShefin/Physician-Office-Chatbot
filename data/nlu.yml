@@ -1,0 +1,186 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - good afternoon
+    - morning
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - goodafternoon
+    - How are you doing today?
+    - Hello Team
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - see you later
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - Okay
+    - Ok
+    - Okie
+    - Okiess
+    - Okiezz
+    - thanks
+    - ok thanks
+    - thank you
+    - ok thank you
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no thanks
+    - no thank you
+    - no thank you so much
+    - no thanks a lot
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+#### PRESCRIPTION REFILL
+- intent: prescription_refill
+  examples: |
+    - Prescription Refill
+- intent: prescription_request
+  examples: |
+    - I need assistance for my prescription refill.
+    - I need help with my prescription refill.
+    - I would like to have my prescription refilled.
+    - Prescription refill.
+    - Refill prescription.
+    - Please refill prescription.
+    - Prescription to be refilled.
+    - Refill my prescription.
+    - Help for refilling prescription.
+- intent: reference_number 
+  examples: |
+    - My Reference Number is - 12345.
+    - Reference Number is - 13542.
+    - RN - 15432.
+    - 54321.
+    - It is - 32451.
+    - Here you go - 23451.
+- intent: connect_physician 
+  examples: |
+    - I would like to connect with physician.
+    - I would like to connect with doctor.
+    - I would like to get in touch with physician.
+    - I would like to get in touch with doctor.
+    - I want to connect with physician
+    - I want to get in touch with physician.
+    - Connect with physician.
+    - Connect me with physician.
+    - physician.
+    - Want physician.
+- intent: connect_reason 
+  examples: |
+    - I would like to be prescribed for Fever/Cold.
+    - I want to be prescribed for Fever/Cold.
+    - Prescribe for Fever/Cold.
+    - Please prescribe for Fever/Cold.
+    - For Fever/Cold.
+    - Fever/Cold.
+    - Fever, Cold.
+    - Fever and Cold.
+    - Cold and Fever.
+#### MEDICAL REPORT ENQUIRY
+- intent: medical_report
+  examples: |
+    - Medical Report Enquiry
+- intent: report_status 
+  examples: |
+    - I would like to know the status of my medical report.
+    - What is status of my medical report.
+    - I want to know the status of my medical report.
+    - Status of my medical report.
+    - What's the status of my medical report.
+    - My medical report status.
+    - Medical report status.
+- intent: report_collection 
+  examples: |
+    - When can I come and collect the report?
+    - When should I collect the report?
+    - When can I collect my report?
+    - When should I get my report?
+    - When can I get my report?
+    - When can I expect my report?
+#### COVID GUIDANCE
+- intent: covid_guidance
+  examples: |
+    - Covid Guidance
+- intent: covid_symptoms 
+  examples: |
+    - I have 104 Fahrenheit body temperature. Is it one of the Covid symptoms?
+    - I have 104 Fahrenheit body temperature. Is it one of the Covid-19 symptoms?
+    - I have 104 Fahrenheit body temperature. Is it one of the Corona symptoms?
+    - I have difficulty in breathing, body pain, sore throat, and loss of taste.
+    - I have fever.
+    - I think I have covid.
+    - I think I have covid-19.
+    - I think I have corona.
+    - How I can know if I have covid.
+    - How I can know if I have covid-19.
+    - How I can know if I have corona.
+    - Need to make sure if I am ok.
+    - Want to know if my fever is due to covid-19

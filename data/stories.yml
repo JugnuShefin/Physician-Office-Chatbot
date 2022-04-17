@@ -1,0 +1,75 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+#### PRESCRIPTION REFILL
+- story: prescription_refill_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: main_prescription_refill
+  - action: utter_main_prescription_refill
+  - intent: prescription_request
+  - action: utter_prescription_request
+  - intent: reference_number
+  - action: utter_reference_number
+  - intent: connect_physician
+  - action: utter_connect_physician
+  - intent: connect_reason
+  - action: utter_connect_reason
+  - intent: affirm
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_conclude
+#### MEDICAL REPORT ENQUIRY
+- story: medical_report_enquiry_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: main_medical_report
+  - action: utter_main_medical_report
+  - intent: report_status
+  - action: utter_report_status
+  - intent: reference_number
+  - action: utter_reference_number
+  - intent: report_collection
+  - action: utter_report_collection
+  - intent: affirm
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_conclude
+#### COVID GUIDANCE
+- story: covid_guidance_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: main_covid_guidance
+  - action: utter_main_covid_guidance
+  - intent: covid_symptoms
+  - action: utter_covid_symptoms
+  - intent: affirm
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_conclude
